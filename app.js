@@ -2,11 +2,13 @@ require('dotenv').config();
 const express = require('express')
 const app = express();
 const mongoose = require('mongoose');
+const cors = require('cors');
 const classeRouter = require('./api/modules/classes/classes.routes');
 const eleveRouter = require('./api/modules/eleves/eleves.routes');
 
-app.use(express.urlencoded({ extended: false }));
+// app.use(express.urlencoded({ extended: false }));
 app.use(express.json());
+app.use(cors());
 const { PORT, MONGO_URL } = process.env;
 
 mongoose.connect(MONGO_URL).then((result) => {

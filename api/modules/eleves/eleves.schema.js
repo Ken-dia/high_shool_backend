@@ -6,7 +6,7 @@ const eleveSchema = mongoose.Schema({
     prenom: { type: String },
     genre: { type: String },
     lieuNaiss: { type: String },
-    dateNaissa: { type: Date },
+    dateNaiss: { type: Date },
     classe: { type: mongoose.Types.ObjectId, ref: Classe }
     
 })

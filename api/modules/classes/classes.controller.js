@@ -3,7 +3,7 @@ const Classe = require('./classes.schema');
 module.exports.findAll = async (req, res) => {
     const classes = await Classe.find();
 
-    return res.send(classes);
+    return res.json(classes);
 }
 
 module.exports.create = async (req, res) => {
