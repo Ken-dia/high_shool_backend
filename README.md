@@ -50,7 +50,7 @@ npm install
 Exécutez `nodemon app.js` pour un serveur de développement
 ### 4. Frontend application
 
-lien du projet api : https://github.com/Ken-dia/high_school_fronted.git
+lien du projet angular : https://github.com/Ken-dia/high_school_fronted.git
  consulter le readme pour plus detail.
 ```bash
 git clone https://github.com/Ken-dia/high_school_fronted.git
